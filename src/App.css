@@ -37,8 +37,35 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: fit-content;
+  width: fit-content;  
 }
+
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #f9d3b4, 0 0 10px rgb(181, 249, 180);
+  }
+  
+  to {
+    text-shadow: 0 0 10px #f9d3b4, 0 0 10px #ff4da6;
+  }
+}
+
+.github a{
+  text-decoration: none;  
+  color: #f9d3b4;
+}
+
+
+
+.github h3 {
+  margin-top: 1rem;
+  font-size: x-large;
+  text-align: center;
+  animation: glow 0.9s ease-in-out infinite alternate;
+}
+
+
 
 .search {
   width: 71%;
